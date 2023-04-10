@@ -1,0 +1,32 @@
+.hamburger {
+    position: relative;
+    display: flex;
+}
+
+.hamburger span {
+    width: 2vw;
+    height: .1rem;
+    position: relative;
+    background-color: var(--color-dark);
+}
+
+.hamburger span:before,
+.hamburger span:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: inherit;
+    background-color: inherit;
+}
+
+.hamburger span:before {
+    top: -.2rem;
+    width: 98%;
+}
+
+.hamburger span:after {
+    bottom: .2rem;
+    background-color: red !important;
+    width: 96%;
+}
